@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лэндинг</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="main-nav">
+            <a href="#"><img src="image/logo.svg" alt="Логотип" class="logo"></a>
+            <li><a href="#home">О продукте</a></li>
+            <li><a href="#about">Стоимость</a></li>
+            <li><a href="#services">ЧаВо</a></li>
+            <li><a href="#contact">Документация</a></li>
+        </ul>
+        <ul class="auth-nav">
+            <li><a href="#login" class="auth-link">Войти</a></li>
+            <li><a href="#register" class="auth-link register-link">Регистрация</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section id="intro">
+            <div class="ellipse-background"></div>
+            <h2 class="main-heading">
+                Разрабатывайте, отлаживайте,<br>
+                тестируйте и моделируйте API<br>
+                локально, на Git или в облаке
+            </h2>
+            <p class="sub-heading">
+                Совместно создавайте лучшие API для самых популярных протоколов с удобным<br>
+                пользовательским интерфейсом, встроенной автоматизацией и расширяемой<br>
+                экосистемой плагинов.
+            </p>
+            <a href="#get-started" class="cta-button">Начать работу</a>
+            <div class="image-placeholder-intro"></div>
+        </section>
+
+
+        <section id="scroll-section">
+            <div class="container">
+                <h2 class="scroll-heading">Внедрение API без проблем</h2>
+                <p class="scroll-subheading">Меньше думайте и больше внедряйте, API не мешают вам спать по ночам.</p>
+
+                <div class="scroll-content">
+                    <div class="text-left">
+                        <h3><span class="highlight">Создание</span> API-интерфейсов</h3>
+                        <p>API-интерфейсы сложны, но создавать их не обязательно. Благодаря упрощенным рабочим
+                            процессам, удобным для разработчиков, API-интерфейсы будут поставляться быстрее.</p>
+                    </div>
+                    <div class="image-right image-placeholder"></div>
+                </div>
+
+                <div class="scroll-content">
+                    <div class="image-left image-placeholder"></div>
+                    <div class="text-right">
+                        <h3><span class="highlight">Отладка</span> API-интерфейсов</h3>
+                        <p>Быстро отлаживайте и изучайте новые API-интерфейсы, чтобы быстрее интегрировать их в ваши
+                            приложения.</p>
+                    </div>
+                </div>
+
+                <div class="scroll-content">
+                    <div class="text-left">
+                        <h3><span class="highlight">Автоматизация</span> тестирования API</h3>
+                        <p>Полностью автоматизируйте жизненный цикл API. Создайте тесты и linting для повышения
+                            надежности с помощью встроенной интеграции CLI и CI/CD</p>
+                    </div>
+                    <div class="image-right image-placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing-section">
+            <div class="container">
+                <h2>Стоимость</h2>
+                <p class="text-center">Прозрачные цены для всех, от индивидуальных разработчиков до крупных организаций
+                </p>
+                <div class="pricing-plans">
+                    <div class="pricing-card">
+                        <h3>Базовый</h3>
+                        <p class="price"><span class="highlight">Бесплатно</span></p>
+                        <p>1 пользователь</p>
+                        <p>1 организация</p>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Профессиональный</h3>
+                        <p class="price">300₽/мес</p>
+                        <p class="discounted-price"><s>3 600₽</s> 2 900₽ / год</p>
+                        <p>10 пользователей</p>
+                        <p>10 организаций</p>
+                        <p>24/5 поддержка</p>
+                        <button class="choose-button">Выбрать</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Корпоративный</h3>
+                        <p class="price">600₽ / мес</p>
+                        <p class="discounted-price"><s>7 200₽</s> 6 900₽ / год</p>
+                        <p>Неограниченные пользователи и организации</p>
+                        <p>24/7 поддержка</p>
+                        <button class="choose-button">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-section">
+            <div class="container">
+                <div class="left-section">
+                    <h2>Часто задаваемые вопросы и ответы</h2>
+                    <p class="additional-info">Не нашли ответа? Напишите нам</p>
+                    <button class="contact-button">Задать вопрос</button>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span class="arrow">▲</span>Что такое API?
+                        </div>
+                        <div class="faq-answer">
+                            <p>API (Application Programming Interface) — это набор методов и средств для взаимодействия
+                                программного обеспечения.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span class="arrow">▲</span>
+                            Преимущество вашего приложения для тестирования API?
+
+                        </div>
+                        <div class="faq-answer">
+                            <span class="arrow">▲</span>
+                            <p>Интуитивный интерфейс, мощные инструменты автоматизации тестирования, гибкие средства
+                                отчетности и интеграция с CI/CD системами.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span class="arrow">▲</span>
+                            Поддерживает ли приложение работу с несколькими протоколами?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, наше приложение поддерживает протоколы, такие как HTTP, HTTPS, SOAP, REST и другие.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span class="arrow">▲</span>
+                            Как легко интегрировать приложение с существующими проектами?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Интеграция быстрая и легкая благодаря детальной документации и готовым плагинам для
+                                популярных сред разработки.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">
+                            <span class="arrow">▲</span> Есть ли техническая поддержка?
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, поддержка 24/7 через электронн ю почту, чат и телефон.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+
+            <p>&copy; Я еблан. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
